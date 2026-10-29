@@ -1,0 +1,40 @@
+/* layout.css – maketas MAŽAM ekranui (mobile first).
+   Čia rašote flexbox taisykles telefonui; media užklausų čia nėra. */
+
+.dest-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover; /* nuotrauka užpildo plotą neiškraipydama proporcijų */
+}
+
+.gallery img {
+  height: 8rem;
+  object-fit: cover;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 12px;
+}
+.nav {
+  display: flex;
+  gap: 12px;
+  justify-content: space-around;
+  margin: 12px;
+}
+
+/* ===== UŽDUOTYS ===== */
+
+/* 4. .header – stulpelis, turinys centruotas; .nav – nuorodos per visą plotį, tolygiai išdėstytos (space-around) */
+
+/* 5. .search – stulpelis: įvestis virš mygtuko, abu per visą plotį */
+
+/* 6. .filters – visi mygtukai vienoje eilutėje (nowrap), kas netelpa – slenkama į šoną (overflow-x: auto); .chip nesitraukia (flex-shrink: 0) */
+
+/* 7. .dest-list – kortelės viena po kitos su tarpais; .dest-meta – trukmė kairėje, kaina dešinėje */
+
+/* 8. kryptis.html: .content – stulpelis, .facts rodomas PIRMAS (order); .fact – pavadinimas kairėje, reikšmė dešinėje;
+    .gallery – po 2 nuotraukas eilutėje (wrap + calc(50% - pusė gap)); .footer – stulpeliai vienas po kito */
